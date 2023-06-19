@@ -13,7 +13,7 @@ Para desglosar un poco la imagen, podemos decir que los costos incluyen:
 
 En este análisis vamos a hechar un vistazo al dataset de **IBM HR Analytics Employee Attrition & Performance**, que consta de 1470 registros de empelados de una compañia y recoge 35 caracteristicas para cada uno, 237 de esos datos son de Ex-empleados, ya han dejado la empresa y nuestro objetivo es tratar de **averiguar cuales son los puntos débiles de nuestro sistema de RRHH** y por qué estos empelados se estan yendo. Queremos detectar esas necesidades o puntos en los cuales el trabajador no se siente contento.
 
-## Objetivos
+## Objetivos especificos
 - Comprender qué factores contribuyen más a la rotación de empleados.
 - Agrupar y clasificar para encontrar patrones significativos de características de los empleados.
 - Crear un modelo que prediga si un determinado empleado abandonará la empresa o no.

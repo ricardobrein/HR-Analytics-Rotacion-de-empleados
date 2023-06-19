@@ -1,7 +1,8 @@
 ## Human Resources-Analytics / Rotacion de empleados
 ![Caso de estudio](media/img1.png)
- La alta rotación de empleados supone grandes perdidas para las empresas, no se trata solo del dinero, sino de la incapacidad de retener el talento y tener que dedicar esfuerzos constantes a integrar nuevas personas en el equipo, además reemplazar empleados de alto nivel suele se runa tarea ardua y costosa.
-![Principales problemas de la rotacion](media/img3.png)
+
+La alta rotación de empleados supone **grandes perdidas para las empresas**, no se trata solo del dinero, sino de la incapacidad de retener el talento y tener que dedicar esfuerzos constantes a integrar nuevas personas en el equipo, además que reemplazar empleados de alto nivel suele ser una tarea ardua y costosa.
+![Principales problemas de la rotacion](media/img2.png)
 
 Aparte de los que vemos en la imagen, incluye:
 

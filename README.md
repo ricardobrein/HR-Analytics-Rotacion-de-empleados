@@ -4,34 +4,34 @@
 La alta rotación de empleados supone **grandes perdidas para las empresas**, no se trata solo del dinero, sino de la incapacidad de retener el talento y tener que dedicar esfuerzos constantes a integrar nuevas personas en el equipo, además que reemplazar empleados de alto nivel suele ser una tarea ardua y costosa.
 ![Principales problemas de la rotacion](media/img2.png)
 
-Para desglosar un poco la imagen, podemos decir que los costos incluyen:
+Los costos también incluyen:
 
 - Costo de baja
 - Costo de contratación (publicidad, entrevistas, contratación)
 - Coste de incorporación de una nueva persona (formación, tiempo de gestión)
 - Pérdida de productividad (una persona nueva puede tardar entre 1 y 2 años en alcanzar la productividad de una persona existente)
 
-En este análisis vamos a hechar un vistazo al dataset de **IBM HR Analytics Employee Attrition & Performance**, que consta de 1470 registros de empelados de una compañia y recoge 35 caracteristicas para cada uno, 237 de esos datos son de Ex-empleados, ya han dejado la empresa y nuestro objetivo es tratar de **averiguar cuales son los puntos débiles de nuestro sistema de RRHH** y por qué estos empelados se estan yendo. Queremos detectar esas necesidades o puntos en los cuales el trabajador no se siente contento.
+En este análisis vamos a hechar un vistazo al dataset de **IBM HR Analytics Employee Attrition & Performance**, que consta de 1470 registros de empleados de una compañia y recoge 35 caracteristicas para cada uno, 237 de los registros son de Ex-empleados, y nuestro objetivo es **averiguar cuales son los puntos débiles de nuestro sistema de RRHH** y por qué estos empleados se han ido. Queremos detectar esas necesidades y puntos en los cuales el trabajador no se siente contento.
 
 ## Objetivos especificos
 - Comprender qué factores contribuyen más a la rotación de empleados.
-- Agrupar y clasificar para encontrar patrones significativos de características de los empleados.
+- Agruparlos y clasificarlos para encontrar patrones significativos en las características de los empleados.
 - Crear un modelo que prediga si un determinado empleado abandonará la empresa o no.
-- Crear y mejorar las estrategias de retenciónd e empleados.
+- Crear y mejorar las estrategias de retención de talento.
 - Que la gerencia y el Departamento de RRHH tenga informacion solida para mejorar la toma de decisiones.
 
 ## Desglose del caso.
 
 En el [notebook de este repositorio](https://github.com/ricardobrein/HR-Analytics-Rotacion-de-empleados/blob/main/Notebook-employee-retention-and-prediction.ipynb) está todo el código que avanza en diferentes pasos a medida que iba abordando el problema.
  
-1. El EDA revisando los datos a ver que logramos conseguir y además gráficamente, vamos a mirar si encontramos algunos patrones o generalidades en ambos grupos
-2. Continuaremos con la prueba de 3 modelos de clasificación para este tipo de situaciones donde lo que queremos conseguir es una probabilidad u otra (Random Forest, Regresion Logística, Xgboost), por otra parte tambien crearemos una red neuronal con tensorflow Para clasificar y evaluaremos el rendimiento con la **matriz de confusión** y veremos cuales modelos nos dan los mejores resultados de f1, precision, sensibilidad, etc.
-3. Sabiendo que lso datos están desbalanceados por lo cual tenderla a predecir mejor la clase mayoritária, vamos a aplciar oversampling con SMOTE, para igualar ambas clases y crearemos los modelos nuevamente.
-4. Evaluaremos el rendimiento del modelo con las pricnipales medidas en problemas de clasificación.
+1. El EDA revisando los datos a ver que conseguimos y además gráficamente, vamos a buscar algunos patrones o generalidades en ambos grupos.
+2. Continuaremos con la prueba de los tres modelos de clasificación para este tipo de situaciones donde lo que queremos conseguir es ls generalización de una probabilidad u otra los modelos son: Random Forest, Regresion Logística, Xgboost, por otra parte tambien crearemos una red neuronal con Tensorflow Para clasificación y evaluaremos el rendimiento con una **matriz de confusión**, para ver cuales modelos nos dan los mejores resultados en cusnto a F1, precision, sensibilidad, etc.
+3. Sabiendo que los datos están desbalanceados se crea uns tendencia lógica a predecir mejor la clase mayoritária, entonces, vamos a aplicar oversampling con SMOTE, para igualar ambas clases y entrenaré los modelos nuevamente.
+4. Evaluación de rendimiento con las pricnipales medidas utilizadas en problemas de clasificación.
 
-Ya que estamos montados en el carro, vamos a crear una **red neuronal sencilla con la API sequential de Tensorflow.** sera una red por capas, que tendra algunas capas densas y funcion de activación ReLU y sigmoid. en el notebook esta todo.
+Ya montados en el carro, como hw mencionado antes, creé una **red neuronal sencilla con la API sequential de Tensorflow.** sera una red por capas, que tendra algunas capas densas y funciones de activación ReLU y sigmoid. en el notebook encontrarás todo.
 
-Al final de el notebook se me ocurrio **eliminar más caracteristicas de los datos** ya que después de la limpieza básica me habian quedado 26, utilice el modulo de sklearn Recursive Feature Elimination, y seleccione las 15 carácteristicas principales, lo cual, aparte de reducir la complejidad del modelo, nos daría una visión más amplia de cuales podrían ser las preocupaciones principales de los empleados quen han abandona o que estan por hacerlo.
+Como última parte, se me ocurre **eliminar más caracteristicas de los datos** ya que después de la limpieza básica me habian quedado 26, utilice el modulo de sklearn Recursive Feature Elimination, y seleccione las 15 carácteristicas principales, lo cual, aparte de reducir la complejidad del modelo, nos daría una visión más amplia de cuales podrían ser las preocupaciones principales de los empleados quen han abandona o que estan por hacerlo.
 
 [JupyterNotebook completo](https://github.com/ricardobrein/HR-Analytics-Rotacion-de-empleados/blob/main/Notebook-employee-retention-and-prediction.ipynb)
 

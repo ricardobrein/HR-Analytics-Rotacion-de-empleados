@@ -20,9 +20,9 @@ En este análisis vamos a hechar un vistazo al dataset de **IBM HR Analytics Emp
 - Crear y mejorar las estrategias de retención de talento.
 - Que la gerencia y el Departamento de RRHH tenga informacion solida para mejorar la toma de decisiones.
 
-## Desglose del caso.
+## Planteamiento del caso.
 
-En el [notebook de este repositorio](https://github.com/ricardobrein/HR-Analytics-Rotacion-de-empleados/blob/main/Notebook-employee-retention-and-prediction.ipynb) está todo el código que avanza en diferentes pasos a medida que iba abordando el problema.
+En este [notebook](https://github.com/ricardobrein/HR-Analytics-Rotacion-de-empleados/blob/main/Notebook-employee-retention-and-prediction.ipynb) está todo el código paso a paso y el modelo mental que se aplica a la hora de abordar el problema.
  
 1. El EDA revisando los datos a ver que conseguimos y además gráficamente, vamos a buscar algunos patrones o generalidades en ambos grupos.
 2. Continuaremos con la prueba de los tres modelos de clasificación para este tipo de situaciones donde lo que queremos conseguir es ls generalización de una probabilidad u otra los modelos son: Random Forest, Regresion Logística, Xgboost, por otra parte tambien crearemos una red neuronal con Tensorflow Para clasificación y evaluaremos el rendimiento con una **matriz de confusión**, para ver cuales modelos nos dan los mejores resultados en cusnto a F1, precision, sensibilidad, etc.
